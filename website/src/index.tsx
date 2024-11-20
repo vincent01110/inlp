@@ -7,6 +7,19 @@ import { PrimeReactProvider } from 'primereact/api';
 import 'primereact/resources/primereact.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primeicons/primeicons.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import AddPage from './components/add-data/AddPage';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />
+  },
+  {
+    path: '/add',
+    element: <AddPage />
+  }
+])
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,7 +27,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <PrimeReactProvider>
-      <App />
+      <RouterProvider router={router} />
     </PrimeReactProvider>
   </React.StrictMode>
 );

@@ -1,0 +1,35 @@
+.Home {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  
+  .Home h1{
+    color: white;
+  }
+  
+  .Finder {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .meme {
+    width: 30rem;
+  }
+  
+  .dialog {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .link {
+    margin-top: 1rem;
+  }

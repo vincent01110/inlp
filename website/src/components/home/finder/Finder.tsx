@@ -4,7 +4,7 @@ import { Button } from 'primereact/button'
 import React, { useState } from "react"
 import "primereact/resources/themes/vela-purple/theme.css";
 import style from "./Finder.module.css"
-import { fetchValue } from "../../utils";
+import { fetchValue } from "../../../utils";
 
 interface FinderProps {
     show: (value?: number) => void;
